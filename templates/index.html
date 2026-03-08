@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>AI Document Summarizer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>AI Document Summarizer</h1>
+
+<div class="container">
+
+<select id="mode">
+<option value="fast">Fast</option>
+<option value="accurate">Accurate</option>
+<option value="detailed">Detailed</option>
+</select>
+
+<textarea id="text" placeholder="Paste your document"></textarea>
+
+<div id="drop-area">
+Drag & Drop PDF here
+<input type="file" id="fileInput">
+</div>
+
+<button onclick="summarize()">Summarize</button>
+
+<h2>Summary</h2>
+<div id="summary"></div>
+
+<h2>Key Points</h2>
+<ul id="keypoints"></ul>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
